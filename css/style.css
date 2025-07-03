@@ -1,0 +1,147 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      height: 60px;
+      background-color: whitesmoke;
+      display: flex;
+      gap: 80px;
+      padding: 0 30px;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      justify-content: space-between;
+    }
+    
+    nav {
+      display: flex;
+      gap: 30px;
+      color: blue;
+
+    }
+
+    li {
+      list-style: none;
+      padding-top: 5px;
+
+    }
+
+    /* .home,.login,.Contact,.Cart {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 20px;
+      font-weight: bold;
+    } */
+
+    /* a {
+      text-decoration: none;
+      color: blue;
+    } */
+     i{
+      color: rgb(173, 75, 75);
+      font-weight: bold;
+     }
+
+    li:hover {
+      text-decoration: underline;
+
+    }
+
+    .search-box {
+      position: relative;
+    }
+
+    .fa-magnifying-glass {
+      position: absolute;
+      left: 6px;
+      top: 10px;
+      font-size: 0.9em;
+      color: rgb(96, 96, 88);
+    }
+
+    input {
+      height: 35px;
+      border-radius: 10px;
+      padding-left: 30px;
+      width: 500px;
+      background-color:rgb(193, 227, 247);
+    }
+    header nav > li:nth-child(2){
+        position: relative;
+       /* background-color: blue; */
+        
+    }
+    header nav > li:nth-child(2):hover > ul {
+      display: block;
+
+    }
+    header nav > li  >ul{
+        background-color:  whitesmoke;
+        position: absolute;
+        width: 150px;
+        padding: 0 20px;
+        border-radius: 10px;
+        display: none;
+    }
+     
+    header nav >li > ul li{
+        margin-bottom: 10px;
+        border-bottom: 1px solid gray; 
+        padding-bottom: 5px; 
+    }
+    header nav > li > ul > li:nth-child(4){
+      position: relative;
+    }
+    header nav > li > ul > li:nth-child(4):hover > ul{
+        display: block;
+    }
+    header nav >li >ul>li ul{
+      background-color: whitesmoke;
+      position: absolute;
+      right: 130px;
+      width: 150px;
+      top: 0;
+      display: none;
+    }
+    .footer-container {
+      display: flex;
+      gap: 40px;
+      padding: 20px;
+      background-color: rgb(163, 68, 68);
+      
+    }
+
+    .footer-column {
+      width: 100px;
+    }
+
+    .footer-column h3 {
+      color: rgb(6, 6, 20);
+      font-size: 14px;
+      margin-bottom: 10px;
+
+    }
+
+    .footer-column a {
+      display: block;
+      color: white;
+      font-size: 13px;
+      text-decoration: none;
+      margin-bottom: 10px;
+
+    }
+
+    .footer-column a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding-top: 60px;
+      background-color: rgb(202, 197, 206);
+     
+    }
+    
