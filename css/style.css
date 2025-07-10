@@ -8,17 +8,16 @@
       height: 60px;
       background-color: whitesmoke;
       display: flex;
-      gap: 80px;
+      gap: 50px;
       padding: 0 30px;
       align-items: center;
       position: fixed;
       width: 100%;
       justify-content: space-between;
-    }
-    
+    }   
     nav {
       display: flex;
-      gap: 30px;
+      gap: 20px;
       color: blue;
 
     }

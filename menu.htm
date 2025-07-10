@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+  <link rel="stylesheet" href="css/mediaquery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 <body>
@@ -37,37 +37,22 @@
       </li>
       <li><i class="fa-solid fa-cart-flatbed-suitcase"></i> Cart </li>
       <li><i class="fa-solid fa-address-book"></i> Contact us</li> 
-            <!-- <li class="home">
-        <i class="fa-solid fa-house-user"></i>
-        <a href="#">Home</a>
-      </li> -->
-      <!-- <li class="login">
-        <i class="fa-solid fa-circle-user"></i>
-        <a href="#">Login</a> 
-        <ul>
-          <li>
-            <i class="fa-solid fa-user"></i>
-            My profile
-          </li>
-          <li>
-            <i class="fa-duotone fa-thin fa-bags-shopping"></i>
-            Orders
-          </li>
-          <li>Wishlist</li>
-          <li>Services</li>
-          <li>Reward</li>
-        </ul> 
-       </li>
-      <li class="Cart">
-        <i class="fa-solid fa-cart-plus"></i>
-        <a href="#">Cart</a>
-      </li>
-      <li class="Contact us">
-        <i class="fa-solid fa-address-book"></i>
-        <a href="#">Contact us</a>
-      </li> -->  
     </nav>
+    <div>
+      <i class="fa-solid fa-bars"></i>
+    </div>
   </header>
+  <script>
+    const menu = document.querySelector(".fa-bars");
+    menu.addEventListener('click',()=>{
+      const nav =document.querySelector('nav');
+      if(nav.style.display=='none'){
+        nav.style.display=" ";
+      }else{
+      nav.style.display="none";
+    }
+    });
+  </script>
   <main class="main">
     <h3>Flipkart</h3>
     <p>
@@ -149,6 +134,7 @@
           <a href="#">Sitemap</a>
           </div>
       </div>
+
     </footer>
   </body>
 </html>

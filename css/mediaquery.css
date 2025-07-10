@@ -1,0 +1,17 @@
+@media screen and (max-width:768px){
+    nav {
+        position: absolute;
+         flex-direction: column;
+         top: 60px;
+         background-color: whitesmoke;
+         height: 100vh;
+         width: 200px;
+         right: 0;
+         align-items: center;
+         display: none;
+        
+    }
+    .menu-icon {
+      display: block;
+    }
+}
